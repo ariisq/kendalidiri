@@ -167,49 +167,43 @@ dialog input[type=time]{width:100%;background:none;border:1px solid var(--line);
 #rs .lbl{color:rgba(255,255,255,.7);font-size:.8rem}
 #rs .tgc{border-color:rgba(255,255,255,.5);color:#fff}
 .row .ghost{touch-action:manipulation}
+#jd{width:100%;max-width:640px;height:auto;margin:auto;display:block;touch-action:none;cursor:crosshair;user-select:none;-webkit-user-select:none}
+#jd text{pointer-events:none}
+.jfg{fill:var(--fg)}.jpb{fill:var(--bg)}.jpl{stroke:var(--fg);fill:none}
+.jst{stroke:var(--fg);fill:none}.jdsh{stroke-dasharray:1 5;opacity:.6}
+.jkn{fill:var(--bg);stroke:var(--fg);stroke-width:1.5}
+.jhl{stroke:var(--bg);stroke-width:4;opacity:.9}
+.jnm{font:400 11px 'Inter',sans-serif;fill:var(--fg);text-anchor:middle;dominant-baseline:central;opacity:.7}
+.jnm.c{font:italic 400 19px 'Instrument Serif',serif;opacity:1}
+.jsm{font:400 11px 'Inter',sans-serif;fill:var(--fg);text-anchor:middle;opacity:.6}
+.jbig{font:400 52px 'Instrument Serif',serif;fill:var(--fg);text-anchor:middle;dominant-baseline:central}
+.jwho{font:italic 400 21px 'Instrument Serif',serif;fill:var(--fg);text-anchor:middle}
+#jhand,#jdot{transform-origin:0 0;pointer-events:none}
+#jhand{transition:transform 1.8s cubic-bezier(.2,.8,.2,1)}
+#jel{transition:stroke-dasharray 1.8s cubic-bezier(.2,.8,.2,1)}
+.jpv{fill:var(--fg);fill-opacity:.12;stroke:var(--fg);stroke-dasharray:3 3;pointer-events:none}
+.jblk{cursor:pointer;animation:jin .9s both cubic-bezier(.2,.8,.2,1);transition:filter .25s}
+.jblk:hover{filter:invert(1)}
+.jblk path:first-child{stroke:var(--fg);stroke-width:1}
+.jbt{font:500 12px 'Inter',sans-serif;fill:var(--fg);stroke:var(--bg);stroke-width:4px;paint-order:stroke;stroke-linejoin:round;pointer-events:none}
+.jbt.iv{fill:var(--bg);stroke:var(--fg)}
+.jlog{stroke:var(--fg);stroke-width:.8;cursor:pointer}
+.jlog:hover{filter:invert(1)}
+.jrun{stroke:var(--fg);stroke-width:.8;animation:jpulse 1.6s ease-in-out infinite}
+@keyframes jin{from{opacity:0}}
+@keyframes jpulse{50%{opacity:.45}}
+.jfall{fill:var(--red);stroke:var(--bg);stroke-width:1.5;cursor:pointer}
+.jurge{fill:var(--bg);stroke:var(--red);stroke-width:2;cursor:pointer}
+.jsq{stroke:var(--fg)}
+.pats{display:flex;gap:6px;flex-wrap:wrap}
+.pt{padding:0;width:38px;height:38px;display:grid;place-items:center;background:none;border:1px solid var(--line)}
+.pt.on{outline:2px solid var(--fg);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 16px;color:var(--mut);font-size:.78rem;justify-content:center;margin-top:6px}
+.nw{border:1px solid var(--fg);padding:12px 14px;margin:6px 0 4px;display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.prow{display:flex;align-items:center;gap:8px}.prow .ent{flex:1}
+.ent.pl{grid-template-columns:104px 1fr}
+.insg rect.low{opacity:.35}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-
-/* ===== 24 jam ===== */
-.mut{color:var(--mut)}
-.zmain{display:grid;gap:30px;align-items:center;margin-top:6px}
-@media(min-width:900px){.zmain{grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr)}}
-#zd{width:100%;max-width:620px;height:auto;margin:auto;display:block;touch-action:none;cursor:crosshair;user-select:none;-webkit-user-select:none}
-#zd text,#zF,#zL,#zrun,#zhand,#zdotg{pointer-events:none}
-.zfg{fill:var(--fg)}.zpb{fill:var(--bg)}.zpl{stroke:var(--fg);fill:none}
-.zst{stroke:var(--fg);fill:none}.zdsh{stroke-dasharray:1 5;opacity:.6}
-.zkn{fill:var(--bg);stroke:var(--fg);stroke-width:1.5}
-.zhl{stroke:var(--bg);stroke-width:4;opacity:.9}
-.znm{font:400 11px 'Inter',sans-serif;fill:var(--fg);text-anchor:middle;dominant-baseline:central;opacity:.7}
-.znm.c{font:italic 400 19px 'Instrument Serif',serif;opacity:1}
-.zsm{font:400 11px 'Inter',sans-serif;fill:var(--fg);text-anchor:middle;opacity:.6}
-.zbig{font:400 58px 'Instrument Serif',serif;fill:var(--fg);text-anchor:middle;dominant-baseline:central;letter-spacing:-.02em}
-.zwho{font:italic 400 21px 'Instrument Serif',serif;fill:var(--fg);text-anchor:middle}
-#zhand,#zdotg{transform-origin:0 0}
-#zhand{transition:transform 1.8s cubic-bezier(.2,.8,.2,1)}
-#zel{transition:stroke-dasharray 1.8s cubic-bezier(.2,.8,.2,1)}
-.zpv{fill:var(--fg);fill-opacity:.12;stroke:var(--fg);stroke-dasharray:3 3;pointer-events:none}
-.zrun{fill:var(--fg);opacity:.5}
-.zfl{stroke:var(--red);stroke-width:2.4;fill:none}
-.zur{stroke:var(--fg);stroke-width:1;stroke-dasharray:2 2;fill:none;opacity:.6}
-.zblk{cursor:pointer;transition:filter .25s}
-.zblk:hover{filter:invert(1)}
-.zblk path:first-child{stroke:var(--fg);stroke-width:1}
-.zbt{font:500 12px 'Inter',sans-serif;fill:var(--fg);stroke:var(--bg);stroke-width:4px;paint-order:stroke;stroke-linejoin:round;pointer-events:none}
-.zbt.iv{fill:var(--bg);stroke:var(--fg)}
-.zaside{display:grid;gap:14px;align-content:start}
-.zaside h2{margin:0}
-.zmeter{height:1px;background:var(--line);position:relative}
-.zmeter i{position:absolute;left:0;top:-1px;height:3px;background:var(--fg);transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
-.zi{display:grid;grid-template-columns:26px 1fr auto;gap:14px;align-items:center;padding:11px 0;border-top:1px solid var(--line);cursor:pointer;transition:padding .25s}
-.zi:hover{padding-left:10px}
-.zname{font:400 20px/1.1 'Instrument Serif',serif}
-.zmini{width:110px;height:110px;display:block;margin-top:10px}
-.zmini path{stroke:var(--fg);stroke-width:.8}
-.zpr{cursor:default}
-.zsw{padding:0;width:36px;height:36px;display:grid;place-items:center;background:none;border:1px solid var(--line)}
-.zsw.on{outline:2px solid var(--fg);outline-offset:2px}
-#pd label.lb{margin:14px 0 0}
-#pd .row label{flex:1;display:block}
 </style>
 </head>
 <body>
@@ -240,16 +234,13 @@ dialog input[type=time]{width:100%;background:none;border:1px solid var(--line);
 <path class="d" stroke-width="2" d="M93 106Q100 110 108 105"/>
 <path class="d" stroke-width="2" d="M90 144L100 160L110 144M90 144L82 176M110 144L118 176M100 160V260"/>
 </symbol>
-<pattern id="zp2" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="zpb" width="7" height="7"/><path class="zpl" d="M0 0V7" stroke-width="1.6"/></pattern>
-<pattern id="zp3" width="8" height="8" patternUnits="userSpaceOnUse"><rect class="zpb" width="8" height="8"/><circle class="zfg" cx="4" cy="4" r="1.4"/></pattern>
-<pattern id="zp4" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="zpb" width="7" height="7"/><path class="zpl" d="M0 0V7M0 0H7"/></pattern>
-<pattern id="zp5" width="6" height="6" patternUnits="userSpaceOnUse"><rect class="zpb" width="6" height="6"/><path class="zpl" d="M0 3H6" stroke-width="1.2"/></pattern>
 </defs></svg>
 <div class="wrap">
 <header class="top"><div><span class="logo">Kendali</span> <span class="tag">tak pernah aku puas.</span></div><button class="ghost" id="inv" title="Balik warna" aria-label="Balik warna">◐</button></header>
-<nav class="tabs" id="tabs"><button data-tab="today" class="on">Hari ini</button><button data-tab="dial">24 jam</button><button data-tab="hist">Riwayat</button><button data-tab="pola">Pola</button></nav>
+<nav class="tabs" id="tabs"><button data-tab="today" class="on">Hari ini</button><button data-tab="jam">24 jam</button><button data-tab="hist">Riwayat</button><button data-tab="pola">Pola</button></nav>
 <div id="run" hidden><div><small>sedang jalan</small><b id="rn"></b></div><span id="rc">00.00.00</span><div class="rb"><button class="ghost" id="re">Edit mulai</button><button class="ghost" id="rx">Berhenti</button></div></div>
 <div data-tab="today">
+<div class="nw" id="nw" hidden></div>
 <div class="risk" id="rk" hidden></div>
 <section class="stage">
 <figure class="fig l"><svg viewBox="0 0 200 260" aria-hidden="true"><use href="#jo"/></svg><figcaption>tenang</figcaption></figure>
@@ -278,36 +269,34 @@ dialog input[type=time]{width:100%;background:none;border:1px solid var(--line);
 <div id="lgs"></div>
 <div class="row"><button class="ghost" id="am2">+ Isi celah</button><button class="ghost" id="ct">Salin hasil track ke teks</button><button class="ghost" id="cl">Hapus log hari ini</button></div>
 </div>
-<div data-tab="dial" hidden>
-<div class="zmain">
-<svg id="zd" viewBox="-262 -262 524 524" aria-label="jam 24 jam, klik atau seret untuk mengisi rencana">
-<circle r="146" class="zst zdsh"/><circle r="206" class="zst zdsh"/>
-<path id="zgd" class="zst" stroke-width=".5" opacity=".22"/>
-<g id="ztk"></g>
-<circle r="212" class="zst" stroke-width=".4"/>
-<circle id="zel" r="212" class="zst" stroke-width="3" transform="rotate(-90)" style="stroke-dasharray:0 1332"/>
-<circle r="130" class="zst" stroke-width=".5"/><circle r="140" class="zst" stroke-width=".5"/>
-<path id="zL" class="zfg"/><path id="zrun" class="zrun"/>
-<g id="zB"></g>
-<g id="zF"></g>
-<path id="zpv" class="zpv"/>
-<circle r="124" class="zst" stroke-width=".5"/>
-<g id="zdotg"><circle cy="-124" r="2.6" class="zfg"/></g>
-<g id="zhand" style="transform:rotate(0deg)"><line y1="-126" y2="-250" class="zhl"/><line y1="-126" y2="-250" class="zst" stroke-width="1.2"/><circle cy="-212" r="5" class="zkn"/></g>
-<text id="zc1" class="zsm" y="-42"></text>
-<text id="zc2" class="zbig" y="-9"></text>
-<text id="zc3" class="zwho" y="42"></text>
-<text id="zc4" class="zsm" y="62"></text>
+<div data-tab="jam" hidden>
+<svg id="jd" viewBox="-262 -262 524 524" aria-label="Jam 24 jam. Cincin luar rencana, cincin dalam aktual, titik merah jatuh.">
+<defs>
+<pattern id="jp2" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="jpb" width="7" height="7"/><path class="jpl" d="M0 0V7" stroke-width="1.6"/></pattern>
+<pattern id="jp3" width="8" height="8" patternUnits="userSpaceOnUse"><rect class="jpb" width="8" height="8"/><circle class="jfg" cx="4" cy="4" r="1.4"/></pattern>
+<pattern id="jp4" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect class="jpb" width="7" height="7"/><path class="jpl" d="M0 0V7M0 0H7"/></pattern>
+<pattern id="jp5" width="6" height="6" patternUnits="userSpaceOnUse"><rect class="jpb" width="6" height="6"/><path class="jpl" d="M0 3H6" stroke-width="1.2"/></pattern>
+</defs>
+<circle r="158" class="jst jdsh"/><circle r="206" class="jst jdsh"/><circle r="128" class="jst jdsh"/><circle r="152" class="jst jdsh"/>
+<path id="jgd" class="jst" stroke-width=".5" opacity=".22"/>
+<g id="jtk"></g>
+<circle r="212" class="jst" stroke-width=".4"/>
+<circle id="jel" r="212" class="jst" stroke-width="3" transform="rotate(-90)" style="stroke-dasharray:0 1332"/>
+<g id="jB"></g><g id="jA"></g><g id="jR"></g><g id="jF"></g>
+<path id="jpv" class="jpv"/>
+<circle r="124" class="jst" stroke-width=".5"/>
+<g id="jdot"><circle cy="-124" r="2.6" class="jfg"/></g>
+<g id="jhand" style="transform:rotate(0deg)"><line y1="-126" y2="-250" class="jhl"/><line y1="-126" y2="-250" class="jst" stroke-width="1.2"/><circle cy="-212" r="5" class="jkn"/></g>
+<text id="jc1" class="jsm" y="-42"></text>
+<text id="jc2" class="jbig" y="-9"></text>
+<text id="jc3" class="jwho" y="42"></text>
+<text id="jc4" class="jsm" y="62"></text>
 </svg>
-<aside class="zaside">
+<div class="legend"><span>cincin luar: rencana</span><span>cincin dalam: aktual (log)</span><span>titik merah: jatuh</span><span>titik kosong: ditahan</span></div>
+<p class="sub" id="jst" style="text-align:center"></p>
+<div class="row" style="justify-content:center"><button class="ghost" id="ap">+ Rencana</button><button class="ghost" id="cy" hidden>Salin rencana kemarin</button></div>
 <h2>rencana hari ini</h2>
-<div id="zs" class="mut"></div>
-<div class="zmeter"><i id="zmt" style="width:0"></i></div>
-<div id="zls"></div>
-<div class="row"><button class="ghost" id="zad">+ Rencana</button><button class="ghost" id="zrs">Kosongkan</button><button class="ghost" id="zcp" hidden>Salin dari hari sebelumnya</button></div>
-<p class="sub">Cincin luar: rencana. Cincin dalam: kegiatan yang benar-benar tercatat di tab Hari ini (yang masih jalan ikut tergambar). Garis merah: waktu kamu jatuh. Klik cincin untuk blok 1 jam, seret untuk rentang bebas, klik blok untuk mengubah. Lewat jam 00.00, rencana pindah ke Riwayat.</p>
-</aside>
-</div>
+<div id="pls"></div>
 </div>
 <div data-tab="pola" hidden>
 <h2>30 hari terakhir</h2>
@@ -346,15 +335,9 @@ dialog input[type=time]{width:100%;background:none;border:1px solid var(--line);
 <div class="row"><button class="ghost" id="ns">Simpan</button><button class="ghost" id="nc">Batal</button><button class="ghost" id="ndl" style="margin-left:auto">Hapus entri</button></div></dialog>
 
 <dialog id="fd"><h3 id="fdt"></h3><div id="fdf"></div><div class="row"><button class="ghost" id="fds">Simpan</button><button class="ghost" id="fdc">Batal</button><button class="ghost" id="fdd" style="margin-left:auto">Hapus</button></div></dialog>
-<dialog id="pd"><h3>Rencana</h3>
-<label class="lb" for="zn">Mau ngapain di jam ini?</label>
-<input type="text" id="zn" maxlength="200" list="tkl" autocomplete="off" placeholder="mis. belajar">
-<div class="row"><label class="lb">Dari<input type="time" id="zt1"></label><label class="lb">Sampai<input type="time" id="zt2"></label></div>
-<div class="row" id="zsws"></div>
-<div class="row"><button class="ghost" id="zsv">Simpan</button><button class="ghost" id="zca">Batal</button><button class="ghost" id="zgo" hidden>Mulai timer</button><button class="ghost" id="zdl" style="margin-left:auto" hidden>Hapus</button></div></dialog>
-<dialog id="bd"><h3>Cadangan</h3><p class="tag">Salin data sebagai kode, atau tempel kode untuk memulihkan. Kode dari Time Tracker lama dan data dari app 24 jam lama juga bisa.</p>
+<dialog id="bd"><h3>Cadangan</h3><p class="tag">Salin data sebagai kode, atau tempel kode untuk memulihkan. Kode dari Time Tracker lama juga bisa.</p>
 <textarea id="bx" rows="5" placeholder="tempel kode cadangan di sini"></textarea>
-<div class="row"><button class="ghost" id="bc">Salin cadangan</button><button class="ghost" id="bp">Pulihkan dari tempelan</button><button class="ghost" id="bz" style="margin-left:auto">Tutup</button></div></dialog>
+<div class="row"><button class="ghost" id="bc">Salin cadangan</button><button class="ghost" id="bp">Pulihkan dari tempelan</button><button class="ghost" id="bl">Ambil rencana Jam 24 lama</button><button class="ghost" id="bz" style="margin-left:auto">Tutup</button></div></dialog>
 <div id="alarm" aria-live="polite">
 <svg class="aw" viewBox="0 0 200 260" aria-hidden="true"><use id="awu" href="#gu"/></svg>
 <div class="ac"><svg class="ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="54" class="r0"/><circle id="rg" cx="60" cy="60" r="54" class="r1"/></svg><div class="halo"></div><div id="an">0</div></div>
@@ -377,6 +360,19 @@ function dk(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate(
 function cnt(k){var d=S.days[k],n=0,id;if(!d)return 0;for(id in d.ev)if(!d.ev[id].x&&d.ev[id].k!=='u')n++;return n}
 function cntU(k){var d=S.days[k],n=0,id;if(!d)return 0;for(id in d.ev)if(!d.ev[id].x&&d.ev[id].k==='u')n++;return n}
 function logsOf(k){var d=S.days[k],o=[],id;if(d&&d.lg)for(id in d.lg)if(!d.lg[id].x)o.push({id:id,n:d.lg[id].n,a:d.lg[id].a,b:d.lg[id].b});return o.sort(function(a,b){return a.a-b.a})}
+function plansOf(k){var d=S.days[k],o=[],id,x;if(d&&d.pl)for(id in d.pl){x=d.pl[id];if(!x.x)o.push({id:id,n:x.n,s:x.s,e:x.e,p:x.p||0})}return o.sort(function(a,b){return a.s-b.s})}
+function adherence(k,run,nowMs){
+  var pl=plansOf(k),lg=logsOf(k).slice(),base=new Date(k+'T00:00').getTime(),plan=0,hit=0,lim=nowMs==null?Infinity:nowMs;
+  if(run)lg.push(run);
+  pl.forEach(function(p){
+    var ps=base+p.s*60000,pe=Math.min(base+p.e*60000,lim),got=0;
+    if(pe<=ps)return;
+    plan+=(pe-ps)/60000;
+    lg.forEach(function(l){if(l.n.toLowerCase()===p.n.toLowerCase()){var o=Math.min(pe,l.b)-Math.max(ps,l.a);if(o>0)got+=o/60000}});
+    hit+=Math.min(got,(pe-ps)/60000);
+  });
+  return{plan:plan,hit:hit,pct:plan>0?Math.round(hit/plan*100):null};
+}
 function fmtDot(ms){var d=new Date(ms);return pad(d.getHours())+'.'+pad(d.getMinutes())}
 function fmtCU(ms){var s=Math.max(0,Math.floor(ms/1000)),m=Math.floor(s/60),h=Math.floor(m/60);return pad(h)+'.'+pad(m%60)+'.'+pad(s%60)}
 function durText(ms){var s=Math.floor(ms/1000),m=Math.floor(s/60),h=Math.floor(m/60),r='';s%=60;m%=60;if(h>0)r+=h+'j ';if(m>0||h>0)r+=m+'m ';return r+s+'s'}
@@ -399,7 +395,7 @@ function addLogs(tid,name,a,b){
   sl();
 }
 function mergeMonth(doc,m){
-  var ch=0,np=0,k,id,r,l,rd,ld,rl,ll,rp,lp,dd=doc.days||{};
+  var ch=0,np=0,k,id,r,l,rd,ld,dd=doc.days||{};
   for(k in dd){
     rd=dd[k].ev||{};ld=S.days[k]||(S.days[k]={ev:{}});
     for(id in rd){
@@ -413,24 +409,17 @@ function mergeMonth(doc,m){
       }
     }
     for(id in ld.ev)if(!rd[id])np=1;
-    rl=dd[k].lg||{};
-    if(Object.keys(rl).length&&!ld.lg)ld.lg={};
-    ll=ld.lg||{};
-    for(id in rl){
-      r=rl[id];l=ll[id];
-      if(!l||(r.u||0)>(l.u||0)){ll[id]=JSON.parse(JSON.stringify(r));ch=1}
-      else if((l.u||0)>(r.u||0))np=1;
-    }
-    for(id in ll)if(!rl[id])np=1;
-    rp=dd[k].pl||{};
-    if(Object.keys(rp).length&&!ld.pl)ld.pl={};
-    lp=ld.pl||{};
-    for(id in rp){
-      r=rp[id];l=lp[id];
-      if(!l||(r.u||0)>(l.u||0)){lp[id]=JSON.parse(JSON.stringify(r));ch=1}
-      else if((l.u||0)>(r.u||0))np=1;
-    }
-    for(id in lp)if(!rp[id])np=1;
+    ['lg','pl'].forEach(function(f){
+      var rr=dd[k][f]||{},ll,i2,a2,b2;
+      if(Object.keys(rr).length&&!ld[f])ld[f]={};
+      ll=ld[f]||{};
+      for(i2 in rr){
+        a2=rr[i2];b2=ll[i2];
+        if(!b2||(a2.u||0)>(b2.u||0)){ll[i2]=JSON.parse(JSON.stringify(a2));ch=1}
+        else if((b2.u||0)>(a2.u||0))np=1;
+      }
+      for(i2 in ll)if(!rr[i2])np=1;
+    });
   }
   for(k in S.days)if(k.indexOf(m)===0&&!dd[k]&&(Object.keys(S.days[k].ev).length||Object.keys(S.days[k].lg||{}).length||Object.keys(S.days[k].pl||{}).length))np=1;
   return{ch:ch,np:np};
@@ -541,10 +530,10 @@ var hk=[],shown=0,pm='';
 function logHTML(k,x){return'<button class="ent lg" data-d="'+k+'" data-l="'+x.id+'"><b>'+fmtDot(x.a)+'–'+fmtDot(x.b)+'</b><span>'+esc(x.n)+' · '+readable(x.b-x.a)+'</span></button>'}
 function dayHTML(k){
   var d=new Date(k+'T00:00'),n=cnt(k),u=cntU(k),mo=k.slice(0,7),head='',lg=logsOf(k),tt=0,li;
-  lg.forEach(function(x){tt+=x.b-x.a});
+  lg.forEach(function(x){tt+=x.b-x.a});var ad=adherence(k);
   if(mo!==pm){head='<h3>'+d.toLocaleDateString('id-ID',{month:'long',year:'numeric'})+'</h3>';pm=mo}
-  li=planRows(k)+lg.map(function(x){return logHTML(k,x)}).join('')+entsOf(k).map(function(x){return entryHTML(k,x)}).join('');
-  return head+'<article class="day'+(n?'':' clean')+'"><div class="dd"><b>'+d.getDate()+'</b><span>'+d.toLocaleDateString('id-ID',{weekday:'long'})+'</span>'+(lg.length?'<button class="lnk" data-c="'+k+'">salin teks</button>':'')+'</div><div class="dc">'+(n?n+' <small>kali jatuh</small>':'bersih')+(u?'<small class="ut">'+u+' ditahan</small>':'')+(tt?'<small class="ut">'+durText(tt)+' tercatat</small>':'')+miniDial(k)+'</div><div class="dl">'+li+'</div></article>';
+  li=lg.map(function(x){return logHTML(k,x)}).join('')+entsOf(k).map(function(x){return entryHTML(k,x)}).join('');
+  return head+'<article class="day'+(n?'':' clean')+'"><div class="dd"><b>'+d.getDate()+'</b><span>'+d.toLocaleDateString('id-ID',{weekday:'long'})+'</span>'+(lg.length?'<button class="lnk" data-c="'+k+'">salin teks</button>':'')+'</div><div class="dc">'+(n?n+' <small>kali jatuh</small>':'bersih')+(u?'<small class="ut">'+u+' ditahan</small>':'')+(tt?'<small class="ut">'+durText(tt)+' tercatat</small>':'')+(ad.pct!=null?'<small class="ut">rencana terpenuhi '+ad.pct+'%</small>':'')+'</div><div class="dl">'+li+'</div></article>';
 }
 function more(){
   if(shown>=hk.length)return;
@@ -558,7 +547,7 @@ function drawHist(){
   shown=0;pm='';$('#hs').innerHTML=hk.length?'':'<p class="empty">Belum ada hari yang selesai. Besok jam 00.00, catatan hari ini pindah ke sini.</p>';
   more();
 }
-function draw(){today=dk(new Date());drawTop();drawToday();drawChart();drawWeek();drawIns();drawRisk();drawCards();drawRun();drawSum();drawLogs();drawTT();drawDial()}
+function draw(){today=dk(new Date());drawTop();drawToday();drawChart();drawWeek();drawIns();drawRisk();drawCards();drawRun();drawSum();drawLogs();drawTT();drawDial();drawNow();drawPlanList()}
 /* ---- aksi ---- */
 var cur=null,curDay=null,kind='f';
 function touch(k){sl();dirty[k.slice(0,7)]=1;schedule();draw()}
@@ -683,8 +672,6 @@ $('#ex').onclick=function(){
     for(id in S.days[k].ev){e=S.days[k].ev[id];if(!e.x)all.push({t:e.t,r:[k,hm(e.t),'',e.k==='u'?'ditahan':'jatuh',q(e.ac||''),e.s||'',q((e.g||[]).join('; ')),q(e.n)]})}
     lg=S.days[k].lg||{};
     for(id in lg){e=lg[id];if(!e.x)all.push({t:e.a,r:[k,hm(e.a),hm(e.b),'kegiatan',q(e.n),Math.round((e.b-e.a)/1000),'',''] })}
-    var pl0=S.days[k].pl||{},ds0=new Date(k+'T00:00').getTime();
-    for(id in pl0){e=pl0[id];if(!e.x)all.push({t:ds0+e.s*60000,r:[k,zhm(e.s),zhm(e.e),'rencana',q(e.n),(e.e-e.s)*60,'','']})}
   }
   all.sort(function(a,b){return a.t-b.t}).forEach(function(x){rows.push(x.r.join(','))});
   var a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+rows.join('\n')],{type:'text/csv'}));a.download='kendali-'+today+'.csv';document.body.appendChild(a);a.click();a.remove();
@@ -753,7 +740,7 @@ function drawTT(){
     keys=Object.keys(m).sort(function(a,b){return m[b]-m[a]}).slice(0,8);mx=keys.length?m[keys[0]]:1;
     out+='<h4 class="h4">'+p[1]+(g?', total '+durText(g):'')+'</h4>'+(keys.map(function(n){return'<div class="hb"><span>'+esc(n)+'</span><b>'+durText(m[n])+'</b><i style="width:'+Math.max(3,m[n]/mx*100)+'%"></i></div>'}).join('')||'<p class="empty">Belum ada data.</p>');
   });
-  $('#tt').innerHTML=out;
+  $('#tt').innerHTML=prodHTML()+out;
 }
 function startTask(id){
   var ac=S.cfg.ac;
@@ -779,11 +766,19 @@ $('#rs').onclick=function(e){var b=e.target.closest('[data-r]');if(!b)return;sta
 var fdSave=null,fdDel=null;
 function openForm(title,fields,onSave,onDel){
   $('#fdt').textContent=title;
-  $('#fdf').innerHTML=fields.map(function(f){return'<label class="lb" for="f_'+f.id+'">'+f.label+'</label><input id="f_'+f.id+'" type="'+(f.type||'text')+'"'+(f.type==='time'?' step="1"':'')+(f.list?' list="'+f.list+'"':'')+' value="'+esc(f.value||'')+'" autocomplete="off">'}).join('');
+  $('#fdf').innerHTML=fields.map(function(f){
+    if(f.type==='pat')return'<label class="lb">'+f.label+'</label><div class="pats" id="f_'+f.id+'" data-v="'+(f.value==null?'':f.value)+'">'+[0,1,2,3,4,5].map(function(q){return'<button type="button" class="pt'+(f.value===q?' on':'')+'" data-p="'+q+'"><svg width="26" height="26"><rect width="26" height="26" class="jsq" style="fill:'+jfill(q)+'"/></svg></button>'}).join('')+'</div>';
+    return'<label class="lb" for="f_'+f.id+'">'+f.label+'</label><input id="f_'+f.id+'" type="'+(f.type||'text')+'"'+(f.type==='time'?' step="'+(f.step||1)+'"':'')+(f.list?' list="'+f.list+'"':'')+' value="'+esc(f.value||'')+'" autocomplete="off">';
+  }).join('');
   $('#fdd').hidden=!onDel;
-  fdSave=function(){var v={};fields.forEach(function(f){v[f.id]=$('#f_'+f.id).value});return onSave(v)};
+  fdSave=function(){var v={};fields.forEach(function(f){var e=$('#f_'+f.id);v[f.id]=f.type==='pat'?e.dataset.v:e.value});return onSave(v)};
   fdDel=onDel;$('#fd').showModal();
 }
+$('#fdf').onclick=function(e){
+  var b=e.target.closest('.pt');if(!b)return;
+  var box=b.parentNode;box.dataset.v=b.dataset.p;
+  [].forEach.call(box.children,function(x){x.classList.toggle('on',x===b)});
+};
 $('#fds').onclick=function(){if(fdSave&&fdSave()!==false)$('#fd').close()};
 $('#fdd').onclick=function(){if(fdDel&&fdDel()!==false)$('#fd').close()};
 $('#fdc').onclick=function(){$('#fd').close()};
@@ -862,7 +857,6 @@ function importAny(d){
     });
     S.cfg.tk.u=Date.now();dirty.cfg=1;return 1;
   }
-  if(importDial(d)>0)return 1;
   return -1;
 }
 $('#bp').onclick=function(){
@@ -879,175 +873,228 @@ function showTab(t){
 }
 $('#tabs').onclick=function(e){var b=e.target.closest('button');if(b)showTab(b.dataset.tab)};
 showTab((function(){try{return localStorage.getItem(KEY+'-tab')}catch(e){return null}})()||'today');
-setInterval(tickRun,1000);
+setInterval(function(){tickRun();tickDial()},1000);
 
-/* ---- 24 jam ---- */
-var ZR0=146,ZR1=206,zhv=null,zdr=null,zed=null,ZLN={},zblocks=[];
-function zP(r,m){var a=m/1440*2*Math.PI;return[r*Math.sin(a),-r*Math.cos(a)]}
-function zf(n){return n.toFixed(2)}
-function zhm(m){m=((Math.floor(m)%1440)+1440)%1440;return pad(Math.floor(m/60))+':'+pad(m%60)}
-function zhms(m){return zhm(m)+':'+pad(Math.floor((m%1)*60))}
-function zdur(m){m=Math.round(m);var h=Math.floor(m/60),k=m%60;return(h?h+'j':'')+(k?(h?' ':'')+k+'m':'')||'0m'}
-function zcut(t,n){return t.length>n?t.slice(0,n-1)+'\u2026':t}
-function zfill(p){return p===0?'var(--fg)':p===1?'var(--bg)':'url(#zp'+p+')'}
-function zarc(s,e,r0,r1){var a=zP(r1,s),b=zP(r1,e),c=zP(r0,e),d=zP(r0,s),L=e-s>720?1:0;return'M'+zf(a[0])+' '+zf(a[1])+'A'+r1+' '+r1+' 0 '+L+' 1 '+zf(b[0])+' '+zf(b[1])+'L'+zf(c[0])+' '+zf(c[1])+'A'+r0+' '+r0+' 0 '+L+' 0 '+zf(d[0])+' '+zf(d[1])+'Z'}
-function plansOf(k){var d=S.days[k],o=[],id,b;if(d&&d.pl)for(id in d.pl){b=d.pl[id];if(!b.x)o.push({id:id,n:b.n,s:b.s,e:b.e,p:b.p|0})}return o.sort(function(a,b){return a.s-b.s})}
-function zov(a,b){return[-1440,0,1440].some(function(k){return a.s<b.e+k&&b.s+k<a.e})}
-function zlanes(){var L=[];ZLN={};zblocks.forEach(function(b){var i=0;while(L[i]&&L[i].some(function(c){return zov(b,c)}))i++;(L[i]=L[i]||[]).push(b);ZLN[b.id]=i});return L.length||1}
-function miniDial(k){
-  var pl=plansOf(k),lg=logsOf(k),ds=new Date(k+'T00:00').getTime(),s='';
-  if(!pl.length&&!lg.length)return'';
-  pl.forEach(function(b){s+='<path d="'+zarc(b.s,b.e,60,98)+'" style="fill:'+zfill(b.p)+'"/>'});
-  lg.forEach(function(x){var a=Math.max(0,(x.a-ds)/60000),b=Math.min(1440,(x.b-ds)/60000);if(b>a)s+='<path d="'+zarc(a,b,46,56)+'" style="fill:var(--fg)"/>'});
-  return'<svg viewBox="-104 -104 208 208" class="zmini" aria-hidden="true"><circle r="98" class="zst" stroke-width=".6"/>'+s+'<circle r="60" class="zst" stroke-width=".4"/><circle r="44" class="zst" stroke-width=".6"/><path class="zst" d="M0 -104V-96M104 0H96M0 104V96M-104 0H-96"/></svg>';
-}
-function planRows(k){return plansOf(k).map(function(b){return'<div class="ent lg zpr"><b>'+zhm(b.s)+'\u2013'+zhm(b.e)+'</b><span>rencana: '+esc(b.n)+' \u00b7 '+zdur(b.e-b.s)+'</span></div>'}).join('')}
-function drawDial(){
-  var n,w,ds=new Date(today+'T00:00').getTime(),lp='',fl='',cov=new Uint8Array(1440),fc,tr=0,pk;
-  zblocks=plansOf(today);n=zlanes();w=(ZR1-ZR0)/n;
-  $('#zB').innerHTML=zblocks.map(function(b){
-    var l=ZLN[b.id],r0=ZR0+l*w+(n>1?1:0),r1=ZR0+(l+1)*w-(n>1?1:0),r=(r0+r1)/2,mid=(b.s+b.e)/2%1440,rv=mid>360&&mid<1080,
-        len=r*(b.e-b.s)/1440*2*Math.PI,fs=Math.max(7,Math.min(13,(r1-r0)*.34)),cap=Math.floor((len-12)/(fs*.6)),txt=cap>=3?zcut(b.n,cap):'',
-        p1=zP(r,rv?b.e:b.s),p2=zP(r,rv?b.s:b.e),
-        tp='M'+zf(p1[0])+' '+zf(p1[1])+'A'+r+' '+r+' 0 '+(b.e-b.s>720?1:0)+' '+(rv?0:1)+' '+zf(p2[0])+' '+zf(p2[1]);
-    return'<g class="zblk" data-pid="'+b.id+'"><path d="'+zarc(b.s,b.e,r0,r1)+'" style="fill:'+zfill(b.p)+'"/>'+(txt?'<path id="zt'+b.id+'" d="'+tp+'" fill="none"/><text class="zbt'+(b.p===0?' iv':'')+'" style="font-size:'+fs+'px" dy=".35em" text-anchor="middle"><textPath href="#zt'+b.id+'" startOffset="50%">'+esc(txt)+'</textPath></text>':'')+'</g>';
-  }).join('');
-  logsOf(today).forEach(function(x){var a=Math.max(0,(x.a-ds)/60000),b=Math.min(1440,(x.b-ds)/60000);tr+=Math.max(0,b-a);if(b>a)lp+=zarc(a,b,130,140)});
-  $('#zL').setAttribute('d',lp);
-  entsOf(today).forEach(function(x){var m=(x.e.t-ds)/60000,a=zP(126,m),b=zP(146,m);fl+='<path d="M'+zf(a[0])+' '+zf(a[1])+'L'+zf(b[0])+' '+zf(b[1])+'" class="'+(x.e.k==='u'?'zur':'zfl')+'"/>'});
-  $('#zF').innerHTML=fl;
-  zblocks.forEach(function(b){for(var m=b.s;m<b.e;m++)cov[m%1440]=1});
-  fc=cov.reduce(function(a,b){return a+b},0);
-  $('#zs').textContent='direncanakan '+zdur(fc)+', kosong '+zdur(1440-fc)+(tr?' \u00b7 tercatat '+zdur(tr):'');
-  $('#zmt').style.width=fc/14.4+'%';
-  $('#zls').innerHTML=zblocks.map(function(b){return'<div class="zi" data-pid="'+b.id+'"><svg width="26" height="26"><rect width="26" height="26" class="zst" style="fill:'+zfill(b.p)+'"/></svg><span><span class="zname">'+esc(b.n)+'</span><br><span class="mut">'+zhm(b.s)+' \u2013 '+zhm(b.e)+'</span></span><span class="mut">'+zdur(b.e-b.s)+'</span></div>'}).join('')||'<p class="empty">Belum ada rencana. Klik cincin jam.</p>';
-  pk=Object.keys(S.days).filter(function(k){return k<today&&plansOf(k).length}).sort().pop();
-  $('#zcp').hidden=zblocks.length>0||!pk;$('#zcp').dataset.k=pk||'';
-  zTick();
-}
-function zTick(){
-  var d=new Date(),t=d.getHours()*60+d.getMinutes()+d.getSeconds()/60,C=2*Math.PI*212,ds=new Date(today+'T00:00').getTime(),ac=S.cfg.ac,
-      a='sekarang',b=zhms(t),c,i,x,hit,nx,ra,rb;
-  $('#zhand').style.transform='rotate('+(t/4)+'deg)';
-  $('#zel').style.strokeDasharray=(C*t/1440)+' '+C;
-  $('#zdotg').style.transform='rotate('+(d.getSeconds()*6)+'deg)';
-  if(ac&&ac.id){ra=Math.max(0,(ac.st-ds)/60000);rb=Math.min(1440,(Date.now()-ds)/60000);$('#zrun').setAttribute('d',rb>ra+.05?zarc(ra,rb,130,140):'')}
-  else $('#zrun').setAttribute('d','');
-  hit=zblocks.filter(function(z){return[0,1440].some(function(k){return t+k>=z.s&&t+k<z.e})}).sort(function(p,q){return(p.e-p.s)-(q.e-q.s)})[0];
-  if(zdr&&zdr.len>0){a='rentang';b=zdur(zdr.len);c=zhm(zdr.s)+' \u2013 '+zhm(zdr.s+zdr.len);i='lepas untuk mengisi'}
-  else if(zhv){x=zblocks.filter(function(z){return z.id===zhv})[0];if(x){a=zhm(x.s)+' \u2013 '+zhm(x.e);b=zdur(x.e-x.s);c=zcut(x.n,24);i='klik untuk mengubah'}}
-  if(c===undefined){
-    if(hit){var kk=t+1440>=hit.s&&t+1440<hit.e?1440:0;c=zcut(hit.n,24);i='tersisa '+zdur(hit.e-t-kk)}
-    else if(ac&&ac.id){c=zcut(ac.n||tname(ac.id),24);i='timer sedang jalan'}
-    else{nx=zblocks.slice().sort(function(p,q){return(((p.s-t)%1440)+1440)%1440-(((q.s-t)%1440)+1440)%1440})[0];c='senggang';i=nx?'berikutnya '+zcut(nx.n,16)+' pukul '+zhm(nx.s):'klik cincin jam untuk mulai'}
+/* ---- 24 jam: rencana, aktual, jatuh ---- */
+var JR={p0:158,p1:206,a0:128,a1:152},jhv=null,jdr=null,JL={};
+function JP(r,m){var a=m/1440*2*Math.PI;return[r*Math.sin(a),-r*Math.cos(a)]}
+function jf(n){return n.toFixed(2)}
+function jhm(m){m=((Math.floor(m)%1440)+1440)%1440;return pad(m/60|0)+':'+pad(m%60)}
+function jhms(m){return jhm(m)+':'+pad(Math.floor((m%1)*60))}
+function jdur(m){m=Math.round(m);var h=m/60|0,k=m%60;return(h?h+'j':'')+(k?(h?' ':'')+k+'m':'')||'0m'}
+function jcut(t,n){return t.length>n?t.slice(0,n-1)+'…':t}
+function jt(v){var q=String(v).split(':');return(+q[0]||0)*60+(+q[1]||0)}
+function jfill(q){return q===0?'var(--fg)':q===1?'var(--bg)':'url(#jp'+q+')'}
+function jarc(s,e,r0,r1){var a=JP(r1,s),b=JP(r1,e),c=JP(r0,e),d=JP(r0,s),L=e-s>720?1:0;return'M'+jf(a[0])+' '+jf(a[1])+'A'+r1+' '+r1+' 0 '+L+' 1 '+jf(b[0])+' '+jf(b[1])+'L'+jf(c[0])+' '+jf(c[1])+'A'+r0+' '+r0+' 0 '+L+' 0 '+jf(d[0])+' '+jf(d[1])+'Z'}
+function jov(a,b){return[-1440,0,1440].some(function(k){return a.s<b.e+k&&b.s+k<a.e})}
+function jlanes(pl){var L=[];JL={};pl.slice().sort(function(a,b){return a.s-b.s}).forEach(function(b){var i=0;while(L[i]&&L[i].some(function(c){return jov(b,c)}))i++;(L[i]=L[i]||[]).push(b);JL[b.id]=i});return L.length||1}
+function patName(n){var key=n.toLowerCase(),pl=plansOf(today),i,q;for(i=0;i<pl.length;i++)if(pl[i].n.toLowerCase()===key)return pl[i].p;q=parseInt(hash(key),36)%6;return q}
+function nowMin(){return(Date.now()-new Date(today+'T00:00').getTime())/60000}
+function runObj(){var ac=S.cfg.ac;return ac&&ac.id?{n:ac.n||tname(ac.id),a:ac.st,b:Date.now()}:null}
+(function(){
+  var t1='',t2='',t3='',nums='',gd='',m,h,hf,a,b,s,k,p,g1,g2;
+  for(m=0;m<1440;m+=15){
+    h=m%60===0;hf=m%30===0;a=JP(h?236:hf?241:244,m);b=JP(250,m);
+    s='M'+jf(a[0])+' '+jf(a[1])+'L'+jf(b[0])+' '+jf(b[1]);
+    if(h)t1+=s;else if(hf)t2+=s;else t3+=s;
+    if(h){k=m/60;p=JP(226,m);nums+='<text class="jnm'+(k%6?'':' c')+'" x="'+jf(p[0])+'" y="'+jf(p[1])+'">'+pad(k)+'</text>';g1=JP(JR.p0,m);g2=JP(JR.p1,m);gd+='M'+jf(g1[0])+' '+jf(g1[1])+'L'+jf(g2[0])+' '+jf(g2[1])}
   }
-  $('#zc1').textContent=a;$('#zc2').textContent=b;$('#zc3').textContent=c;$('#zc4').textContent=i;
+  $('#jtk').innerHTML='<path class="jst" stroke-width="1.5" d="'+t1+'"/><path class="jst" stroke-width=".9" d="'+t2+'"/><path class="jst" stroke-width=".5" d="'+t3+'"/>'+nums;
+  $('#jgd').setAttribute('d',gd);
+})();
+function drawDial(){
+  var pl=plansOf(today),n=jlanes(pl),w=(JR.p1-JR.p0)/n,base=new Date(today+'T00:00').getTime();
+  $('#jB').innerHTML=pl.map(function(b,i){
+    var l=JL[b.id],r0=JR.p0+l*w+(n>1?1:0),r1=JR.p0+(l+1)*w-(n>1?1:0),r=(r0+r1)/2,mid=(b.s+b.e)/2%1440,rv=mid>360&&mid<1080;
+    var len=r*(b.e-b.s)/1440*2*Math.PI,fs=Math.max(7,Math.min(13,(r1-r0)*.34)),cap=Math.floor((len-12)/(fs*.6)),txt=cap>=3?jcut(b.n,cap):'';
+    var A=JP(r,rv?b.e:b.s),B=JP(r,rv?b.s:b.e),tp='M'+jf(A[0])+' '+jf(A[1])+'A'+r+' '+r+' 0 '+(b.e-b.s>720?1:0)+' '+(rv?0:1)+' '+jf(B[0])+' '+jf(B[1]);
+    return'<g class="jblk" data-pl="'+b.id+'" style="animation-delay:'+i*70+'ms"><path d="'+jarc(b.s,b.e,r0,r1)+'" style="fill:'+jfill(b.p)+'"/>'+(txt?'<path id="jtp'+b.id+'" d="'+tp+'" fill="none"/><text class="jbt'+(b.p===0?' iv':'')+'" style="font-size:'+fs+'px" dy=".35em" text-anchor="middle"><textPath href="#jtp'+b.id+'" startOffset="50%">'+esc(txt)+'</textPath></text>':'')+'</g>';
+  }).join('');
+  $('#jA').innerHTML=logsOf(today).map(function(x){
+    var s=Math.max(0,(x.a-base)/60000),e=Math.min(1440,(x.b-base)/60000),q;
+    if(e-s<0.2)return'';
+    q=patName(x.n);if(q===1)q=0;
+    return'<path class="jlog" data-lg="'+x.id+'" d="'+jarc(s,e,JR.a0,JR.a1)+'" style="fill:'+jfill(q)+'"><title>'+esc(x.n)+' '+jhm(s)+'-'+jhm(e)+'</title></path>';
+  }).join('');
+  $('#jF').innerHTML=entsOf(today).map(function(x){
+    var m=(x.e.t-base)/60000,p=JP(212,m);
+    return'<circle class="'+(x.e.k==='u'?'jurge':'jfall')+'" data-f="'+x.id+'" cx="'+jf(p[0])+'" cy="'+jf(p[1])+'" r="5"/>';
+  }).join('');
+  tickDial();
 }
-function zmins(e){var sv=$('#zd'),p=sv.createSVGPoint();p.x=e.clientX;p.y=e.clientY;var q=p.matrixTransform(sv.getScreenCTM().inverse());return{d:Math.hypot(q.x,q.y),m:((Math.atan2(q.x,-q.y)/(2*Math.PI)*1440)+1440)%1440}}
-function ztoM(v){var p=(v||'0:0').split(':');return(+p[0]||0)*60+(+p[1]||0)}
-function zsetP(p){zed.p=p;[].forEach.call($('#zsws').children,function(x){x.classList.toggle('on',+x.dataset.p===p)})}
-function zopen(b){
-  zed={id:b.id,s:b.s,e:b.e,n:b.n||'',p:b.p};
-  $('#zn').value=zed.n;$('#zt1').value=zhm(b.s);$('#zt2').value=zhm(b.e);zsetP(b.p);
-  $('#zdl').hidden=!b.id;$('#zgo').hidden=!b.id;$('#pd').showModal();
+function tickDial(){
+  var d=new Date(),base=new Date(today+'T00:00').getTime(),now=d.getTime(),t=(now-base)/60000,C=2*Math.PI*212,ac=S.cfg.ac,run=ac&&ac.id,rr='',pl=plansOf(today),a='sekarang',b,c,i,x,s,q,cur=null,nx=null;
+  if(t<0||t>=1440)return;
+  $('#jhand').style.transform='rotate('+t/4+'deg)';
+  $('#jel').style.strokeDasharray=(C*t/1440)+' '+C;
+  $('#jdot').style.transform='rotate('+d.getSeconds()*6+'deg)';
+  if(run){s=Math.max(0,(ac.st-base)/60000);if(t-s>0.05){q=patName(ac.n||tname(ac.id));if(q===1)q=0;rr='<path class="jrun" data-run="1" d="'+jarc(s,t,JR.a0,JR.a1)+'" style="fill:'+jfill(q)+'"/>'}}
+  $('#jR').innerHTML=rr;
+  b=jhms(t);
+  pl.forEach(function(p){
+    if([0,1440].some(function(k){return t+k>=p.s&&t+k<p.e})&&(!cur||p.e-p.s<cur.e-cur.s))cur=p;
+    if(p.s>t&&(!nx||p.s<nx.s))nx=p;
+  });
+  if(jdr&&jdr.len>0){a='rentang';b=jdur(jdr.len);c=jhm(jdr.s)+' – '+jhm(jdr.s+jdr.len);i='lepas untuk merencanakan'}
+  else if(jhv){
+    if(jhv.k==='pl'){x=pl.filter(function(z){return z.id===jhv.id})[0];if(x){a='rencana '+jhm(x.s)+' – '+jhm(x.e);b=jdur(x.e-x.s);c=jcut(x.n,24);i='klik untuk mengubah'}}
+    else if(jhv.k==='lg'){x=logsOf(today).filter(function(z){return z.id===jhv.id})[0];if(x){a='aktual '+fmtDot(x.a)+' – '+fmtDot(x.b);b=jdur((x.b-x.a)/60000);c=jcut(x.n,24);i='klik untuk mengubah'}}
+    else{x=entsOf(today).filter(function(z){return z.id===jhv.id})[0];if(x){a=x.e.k==='u'?'dorongan ditahan':'jatuh';b=hm(x.e.t);c=x.e.ac?'saat: '+jcut(x.e.ac,18):'';i='klik untuk catatan'}}
+  }
+  if(c===undefined){
+    if(run){a='sedang jalan';c=jcut(ac.n||tname(ac.id),24);i=fmtCU(now-ac.st)}
+    else if(cur){a='rencana';c=jcut(cur.n,24);i='tersisa '+jdur(cur.e-t)}
+    else{c='senggang';i=nx?'berikutnya '+jcut(nx.n,16)+' pukul '+jhm(nx.s):'seret di cincin luar untuk merencanakan'}
+  }
+  $('#jc1').textContent=a;$('#jc2').textContent=b;$('#jc3').textContent=c||'';$('#jc4').textContent=i||'';
 }
-function zsave(){
-  var s=ztoM($('#zt1').value),e=ztoM($('#zt2').value),n=$('#zn').value.trim()||'tanpa judul',d,id;
-  if(!zed)return;
-  if(e<=s)e+=1440;if(e-s>1439)e=s+1439;
-  d=S.days[today]||(S.days[today]={ev:{}});d.pl=d.pl||{};
-  id=zed.id||'p'+uid();
-  d.pl[id]={n:n,s:s,e:e,p:zed.p,u:Date.now()};
-  $('#pd').close();touch(today);
+var jd=$('#jd');
+function jmins(e){var p=jd.createSVGPoint();p.x=e.clientX;p.y=e.clientY;var q=p.matrixTransform(jd.getScreenCTM().inverse());return{d:Math.hypot(q.x,q.y),m:((Math.atan2(q.x,-q.y)/(2*Math.PI)*1440)+1440)%1440}}
+jd.addEventListener('pointerdown',function(e){
+  var q=jmins(e),g,h;
+  if(q.d<JR.p0-6||q.d>JR.p1+8)return;
+  g=document.elementFromPoint(e.clientX,e.clientY);
+  if(g&&g.closest('[data-f],[data-lg]'))return;
+  jd.setPointerCapture(e.pointerId);
+  h=g&&g.closest('[data-pl]');
+  jdr={a:Math.round(q.m/15)*15%1440,raw:q.m,s:0,len:0,id:h?h.dataset.pl:null};
+});
+jd.addEventListener('pointermove',function(e){
+  if(!jdr)return;
+  var m=Math.round(jmins(e).m/15)*15%1440,d=(((m-jdr.a+720)%1440)+1440)%1440-720;
+  jdr.len=Math.abs(d);jdr.s=d<0?(jdr.a+d+1440)%1440:jdr.a;
+  $('#jpv').setAttribute('d',jdr.len?jarc(jdr.s,jdr.s+jdr.len,JR.p0,JR.p1):'');tickDial();
+});
+jd.addEventListener('pointerup',function(){
+  if(!jdr)return;
+  var x=jdr,s;jdr=null;$('#jpv').setAttribute('d','');
+  if(x.len>=15)planForm(today,null,{s:x.s,e:x.s+x.len});
+  else if(x.id)planForm(today,x.id);
+  else{s=Math.floor(x.raw/60)*60;planForm(today,null,{s:s,e:s+60})}
+  tickDial();
+});
+jd.addEventListener('pointercancel',function(){jdr=null;$('#jpv').setAttribute('d','');tickDial()});
+jd.addEventListener('pointerover',function(e){
+  if(jdr)return;
+  var t=e.target.closest&&e.target.closest('[data-pl],[data-lg],[data-f]');
+  jhv=t?(t.dataset.pl?{k:'pl',id:t.dataset.pl}:t.dataset.lg?{k:'lg',id:t.dataset.lg}:{k:'f',id:t.dataset.f}):null;tickDial();
+});
+jd.addEventListener('pointerleave',function(){if(!jdr){jhv=null;tickDial()}});
+jd.addEventListener('click',function(e){
+  var t=e.target.closest&&e.target.closest('[data-lg],[data-f],[data-run]');
+  if(!t)return;
+  if(t.dataset.lg)logForm(today,t.dataset.lg);else if(t.dataset.f)openNote(today,t.dataset.f);else toast('Timer masih berjalan');
+});
+function planForm(day,id,init){
+  var d0=S.days[day],x=id&&d0&&d0.pl?d0.pl[id]:null,s=x?x.s:init.s,e=x?x.e:init.e;
+  openForm(x?'Ubah rencana':'Rencana baru',[
+    {id:'n',label:'Kegiatan',value:x?x.n:'',list:'tkl'},
+    {id:'a',label:'Dari',type:'time',step:60,value:jhm(s)},
+    {id:'b',label:'Sampai',type:'time',step:60,value:jhm(e)},
+    {id:'p',label:'Pola',type:'pat',value:x?(x.p||0):null}
+  ],function(v){
+    var n=v.n.trim(),a,b,d,q;
+    if(!n||!v.a||!v.b){toast('Isi kegiatan, dari, dan sampai');return false}
+    a=jt(v.a);b=jt(v.b);if(b<=a)b+=1440;if(b-a>1439)b=a+1439;
+    q=v.p===''?patName(n):+v.p;
+    d=S.days[day]||(S.days[day]={ev:{}});d.pl=d.pl||{};
+    d.pl[x?id:'p'+uid()]={n:n,s:a,e:b,p:q,u:Date.now()};
+    touch(day);drawHist();
+  },x?function(){
+    if(!confirm('Hapus rencana ini?'))return false;
+    x.x=1;x.u=Date.now();touch(day);drawHist();
+  }:null);
 }
-function startByName(n){
-  var t=tks().filter(function(x){return x.name===n})[0];
-  if(!t){t={id:uid(),name:n};S.cfg.tk.list.push(t);S.cfg.tk.u=Date.now()}
+$('#ap').onclick=function(){var s=Math.ceil(nowMin()/15)*15;planForm(today,null,{s:s%1440,e:s%1440+60})};
+function startByName(name){
+  var key=name.toLowerCase(),t=tks().filter(function(x){return x.name.toLowerCase()===key})[0];
+  if(!t){t={id:uid(),name:name};S.cfg.tk.list.push(t);S.cfg.tk.u=Date.now();dirty.cfg=1}
   startTask(t.id);
 }
-function importDial(o){
-  var k,n=0,d;
-  if(!o||typeof o!=='object')return 0;
-  for(k in o){
-    if(!/^\d{4}-\d\d-\d\d$/.test(k)||!o[k]||!Array.isArray(o[k].b))continue;
-    d=S.days[k]||(S.days[k]={ev:{}});d.pl=d.pl||{};
-    o[k].b.forEach(function(b){
-      var id='p'+(b.id||uid());
-      if(d.pl[id]||!(+b.e>+b.s))return;
-      d.pl[id]={n:String(b.n||'tanpa judul'),s:+b.s,e:+b.e,p:b.p|0,u:Date.now()};n++;
+function cover(p,t){
+  var base=new Date(today+'T00:00').getTime(),ps=base+p.s*60000,pe=base+Math.min(p.e,t)*60000,got=0;
+  logsOf(today).forEach(function(l){if(l.n.toLowerCase()===p.n.toLowerCase()){var o=Math.min(pe,l.b)-Math.max(ps,l.a);if(o>0)got+=o/60000}});
+  return got;
+}
+function drawNow(){
+  var b=$('#nw'),t=nowMin(),pl=plansOf(today),ac=S.cfg.ac,run=ac&&ac.id?(ac.n||tname(ac.id)):'',cur=null,nx=null,h='';
+  pl.forEach(function(p){if(t>=p.s&&t<p.e&&(!cur||p.e-p.s<cur.e-cur.s))cur=p;if(p.s>t&&(!nx||p.s<nx.s))nx=p});
+  if(cur){
+    if(run&&run.toLowerCase()===cur.n.toLowerCase())h='<span>Sesuai rencana: <b>'+esc(cur.n)+'</b> sampai '+jhm(cur.e)+', tersisa '+jdur(cur.e-t)+'.</span>';
+    else h='<span>Sekarang rencananya: <b>'+esc(cur.n)+'</b> ('+jhm(cur.s)+' – '+jhm(cur.e)+')'+(run?'. Kamu sedang: '+esc(run):'')+'.</span><button class="ghost" data-go="'+esc(cur.n)+'">Mulai '+esc(jcut(cur.n,18))+'</button>';
+  }else if(nx)h='<span>Berikutnya: <b>'+esc(nx.n)+'</b> pukul '+jhm(nx.s)+', dalam '+jdur(nx.s-t)+'.</span>';
+  b.hidden=!h;b.innerHTML=h;
+}
+$('#nw').onclick=function(e){var g=e.target.closest('[data-go]');if(g)startByName(g.dataset.go)};
+function drawPlanList(){
+  var pl=plansOf(today),t=nowMin(),cov=new Uint8Array(1440),fl=0,i,m,a=adherence(today,runObj(),Date.now()),y=new Date();
+  pl.forEach(function(p){for(m=p.s;m<p.e;m++)cov[m%1440]=1});
+  for(i=0;i<1440;i++)fl+=cov[i];
+  $('#pls').innerHTML=pl.map(function(p){
+    var rec=p.s<t&&cover(p,t)<0.5*(Math.min(p.e,t)-p.s);
+    return'<div class="prow"><button class="ent pl" data-pl="'+p.id+'"><b>'+jhm(p.s)+'–'+jhm(p.e)+'</b><span>'+esc(p.n)+' · '+jdur(p.e-p.s)+'</span></button>'+(rec?'<button class="lnk" data-rec="'+p.id+'">catat</button>':'')+'</div>';
+  }).join('')||'<p class="empty">Belum ada rencana. Seret di cincin luar jam, atau tekan + Rencana.</p>';
+  $('#jst').textContent=pl.length?'Terisi '+jdur(fl)+', kosong '+jdur(1440-fl)+'.'+(a.pct!=null?' Sesuai rencana sejauh ini: '+a.pct+'% ('+jdur(a.hit)+' dari '+jdur(a.plan)+').':''):'';
+  y.setDate(y.getDate()-1);
+  $('#cy').hidden=!(pl.length===0&&plansOf(dk(y)).length>0);
+}
+$('#pls').onclick=function(e){
+  var r=e.target.closest('[data-rec]'),b,p,d,base,t;
+  if(r){
+    p=S.days[today].pl[r.dataset.rec];base=new Date(today+'T00:00').getTime();t=nowMin();
+    d=S.days[today];d.lg=d.lg||{};
+    d.lg['p'+r.dataset.rec]={n:p.n,a:base+p.s*60000,b:base+Math.min(p.e,t)*60000,u:Date.now()};
+    touch(today);drawHist();toast('Dicatat sebagai log');return;
+  }
+  b=e.target.closest('[data-pl]');if(b)planForm(today,b.dataset.pl);
+};
+$('#cy').onclick=function(){
+  var y=new Date(),d=S.days[today]||(S.days[today]={ev:{}});
+  y.setDate(y.getDate()-1);d.pl=d.pl||{};
+  plansOf(dk(y)).forEach(function(p){d.pl['p'+uid()]={n:p.n,s:p.s,e:p.e,p:p.p,u:Date.now()}});
+  touch(today);drawHist();toast('Rencana kemarin disalin');
+};
+function prodHTML(){
+  var H=[],i,d,he,mx=1,bi=0,bs=-1,s3,hb='',ap=0,an=0,a,hot,tot=0;
+  for(i=0;i<24;i++)H.push(0);
+  for(i=0;i<30;i++){
+    d=new Date();d.setDate(d.getDate()-i);
+    logsOf(dk(d)).forEach(function(l){
+      var t=l.a,dt;
+      while(t<l.b){dt=new Date(t);he=Math.min(l.b,new Date(dt.getFullYear(),dt.getMonth(),dt.getDate(),dt.getHours()+1).getTime());H[dt.getHours()]+=(he-t)/60000;tot+=(he-t)/60000;t=he}
     });
-    dirty[k.slice(0,7)]=1;
   }
-  return n;
-}
-function migrateOld(){
-  var raw,o;
-  try{raw=localStorage.getItem('jam24-v1d');if(!raw||localStorage.getItem('jam24-moved'))return;o=JSON.parse(raw)}catch(e){return}
-  if(importDial(o)>0){try{localStorage.setItem('jam24-moved','1')}catch(e){}sl()}
-}
-function zInit(){
-  var t1='',t2='',t3='',nums='',gd='',m,h,hf,a,b,s,k,x,p,q,zsv=$('#zd'),zpv=$('#zpv');
-  for(m=0;m<1440;m+=15){
-    h=m%60===0;hf=m%30===0;a=zP(h?236:hf?241:244,m);b=zP(250,m);
-    s='M'+zf(a[0])+' '+zf(a[1])+'L'+zf(b[0])+' '+zf(b[1]);
-    if(h)t1+=s;else if(hf)t2+=s;else t3+=s;
-    if(h){k=m/60;x=zP(226,m);nums+='<text class="znm'+(k%6?'':' c')+'" x="'+zf(x[0])+'" y="'+zf(x[1])+'">'+pad(k)+'</text>';p=zP(ZR0,m);q=zP(ZR1,m);gd+='M'+zf(p[0])+' '+zf(p[1])+'L'+zf(q[0])+' '+zf(q[1])}
+  for(i=0;i<24;i++){s3=H[i]+H[(i+1)%24]+H[(i+2)%24];if(s3>bs){bs=s3;bi=i}if(H[i]>mx)mx=H[i]}
+  hot=tot>=60&&bs>0;
+  for(i=0;i<24;i++){
+    var hh=H[i]?Math.max(3,H[i]/mx*48):0,inw=hot&&((i-bi+24)%24)<3;
+    hb+=H[i]?'<rect class="'+(inw?'':'low')+'" x="'+(i*12+2)+'" y="'+(52-hh)+'" width="8" height="'+hh+'"/>':'<circle cx="'+(i*12+6)+'" cy="50" r="1.2"/>';
   }
-  $('#ztk').innerHTML='<path class="zst" stroke-width="1.5" d="'+t1+'"/><path class="zst" stroke-width=".9" d="'+t2+'"/><path class="zst" stroke-width=".5" d="'+t3+'"/>'+nums;
-  $('#zgd').setAttribute('d',gd);
-  $('#zsws').innerHTML=[0,1,2,3,4,5].map(function(p){return'<button type="button" class="zsw" data-p="'+p+'" aria-label="pola '+(p+1)+'"><svg width="26" height="26"><rect width="26" height="26" class="zst" style="fill:'+zfill(p)+'"/></svg></button>'}).join('');
-  $('#zsws').onclick=function(e){var b2=e.target.closest('[data-p]');if(b2)zsetP(+b2.dataset.p)};
-  zsv.addEventListener('pointerdown',function(e){
-    var q2=zmins(e),g,h2;if(q2.d<128)return;
-    zsv.setPointerCapture(e.pointerId);g=document.elementFromPoint(e.clientX,e.clientY);h2=g&&g.closest&&g.closest('[data-pid]');
-    zdr={a:Math.round(q2.m/15)*15%1440,raw:q2.m,s:0,len:0,id:h2?h2.dataset.pid:null};
-  });
-  zsv.addEventListener('pointermove',function(e){
-    if(!zdr)return;
-    var m2=Math.round(zmins(e).m/15)*15%1440,d=(((m2-zdr.a+720)%1440)+1440)%1440-720;
-    zdr.len=Math.abs(d);zdr.s=d<0?(zdr.a+d+1440)%1440:zdr.a;
-    zpv.setAttribute('d',zdr.len?zarc(zdr.s,zdr.s+zdr.len,ZR0,ZR1):'');zTick();
-  });
-  zsv.addEventListener('pointerup',function(){
-    if(!zdr)return;
-    var x2=zdr,s2,bl;zdr=null;zpv.setAttribute('d','');
-    if(x2.len>=15)zopen({s:x2.s,e:x2.s+x2.len,n:'',p:zblocks.length%6});
-    else if(x2.id){bl=zblocks.filter(function(z){return z.id===x2.id})[0];if(bl)zopen(bl)}
-    else{s2=Math.floor(x2.raw/60)*60;zopen({s:s2,e:s2+60,n:'',p:zblocks.length%6})}
-    zTick();
-  });
-  zsv.addEventListener('pointercancel',function(){zdr=null;zpv.setAttribute('d','');zTick()});
-  zsv.addEventListener('pointerover',function(e){if(zdr)return;var h3=e.target.closest&&e.target.closest('[data-pid]');zhv=h3?h3.dataset.pid:null;zTick()});
-  zsv.addEventListener('pointerleave',function(){if(!zdr){zhv=null;zTick()}});
-  $('#zad').onclick=function(){var s3=(new Date().getHours()+1)%24*60;zopen({s:s3,e:s3+60,n:'',p:zblocks.length%6})};
-  $('#zls').onclick=function(e){var li=e.target.closest('[data-pid]'),bl;if(!li)return;bl=zblocks.filter(function(z){return z.id===li.dataset.pid})[0];if(bl)zopen(bl)};
-  $('#zls').onpointerover=function(e){var li=e.target.closest('[data-pid]');zhv=li?li.dataset.pid:null;zTick()};
-  $('#zls').onpointerleave=function(){zhv=null;zTick()};
-  $('#zsv').onclick=zsave;
-  $('#zca').onclick=function(){$('#pd').close()};
-  $('#zn').addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();zsave()}});
-  $('#zdl').onclick=function(){
-    var d=S.days[today],o=d&&d.pl&&zed&&zed.id?d.pl[zed.id]:null;
-    $('#pd').close();if(o){o.x=1;o.u=Date.now();touch(today)}
-  };
-  $('#zgo').onclick=function(){
-    var n=$('#zn').value.trim();if(!n){toast('Isi nama dulu');return}
-    zsave();startByName(n);toast('Timer jalan: '+n);
-  };
-  $('#zrs').onclick=function(){
-    var rs2=$('#zrs'),d=S.days[today],id;
-    if(rs2.dataset.a){
-      if(d&&d.pl)for(id in d.pl)if(!d.pl[id].x){d.pl[id].x=1;d.pl[id].u=Date.now()}
-      touch(today);rs2.textContent='Kosongkan';delete rs2.dataset.a;
-    }else{rs2.dataset.a=1;rs2.textContent='Yakin? klik lagi';setTimeout(function(){rs2.textContent='Kosongkan';delete rs2.dataset.a},3000)}
-  };
-  $('#zcp').onclick=function(){
-    var k2=$('#zcp').dataset.k,o=plansOf(k2),d;if(!o.length)return;
-    d=S.days[today]||(S.days[today]={ev:{}});d.pl=d.pl||{};
-    o.forEach(function(b){d.pl['p'+uid()]={n:b.n,s:b.s,e:b.e,p:b.p,u:Date.now()}});touch(today);
-  };
-  setInterval(zTick,1000);
+  [0,6,12,18].forEach(function(h){hb+='<text x="'+(h*12+2)+'" y="66">'+pad(h)+'</text>'});
+  for(i=0;i<7;i++){d=new Date();d.setDate(d.getDate()-i);a=adherence(dk(d),i===0?runObj():null,i===0?Date.now():null);if(a.pct!=null){ap+=a.pct;an++}}
+  return'<div class="insg"><div><h4>jam produktif (waktu tercatat, 30 hari)</h4><svg viewBox="0 0 288 72">'+hb+'</svg></div></div><p class="sub">'+
+    (hot?'Paling produktif sekitar '+pad(bi)+'.00 sampai '+pad((bi+3)%24)+'.00. ':'Butuh lebih banyak log untuk melihat jam produktif. ')+
+    (an?'Rencana terpenuhi rata-rata '+Math.round(ap/an)+'% dalam 7 hari terakhir ('+an+' hari berencana).':'Belum ada rencana di 7 hari terakhir.')+'</p>';
 }
+$('#bl').onclick=async function(){
+  if(!KY){toast('Masukkan kata sandi sinkron dulu');return}
+  try{
+    var r=await fetch('/api/sync?legacy=1',{headers:{'x-key':KY}});
+    if(!r.ok)throw 1;
+    var j=await r.json(),n=0,m,k,dd,day;
+    for(m in(j.months||{})){
+      dd=(j.months[m]||{}).days||{};
+      for(k in dd){
+        day=S.days[k]||(S.days[k]={ev:{}});day.pl=day.pl||{};
+        (dd[k].b||[]).forEach(function(x){var id='j'+x.id;if(!day.pl[id]){day.pl[id]={n:x.n,s:x.s,e:x.e,p:x.p||0,u:dd[k].u||Date.now()};n++}});
+        dirty[k.slice(0,7)]=1;
+      }
+    }
+    sl();draw();drawHist();schedule();$('#bd').close();
+    toast(n?n+' blok rencana diimpor':'Tidak ada data Jam 24 lama di database ini');
+  }catch(e){toast('Gagal mengambil data lama')}
+};
+
 /* ---- sinkron antar perangkat ---- */
 function st(t){$('#sy').textContent=t}
 function askKey(){$('#kq').hidden=false;st('masukkan kata sandi sinkron untuk menyambungkan perangkat ini.')}
@@ -1088,10 +1135,9 @@ async function flush(){
   busy=0;
 }
 /* ---- jalan ---- */
-zInit();migrateOld();
 draw();drawHist();
 new IntersectionObserver(function(e){if(e[0].isIntersecting)more()},{rootMargin:'400px'}).observe($('#sn'));
-setInterval(function(){if(dk(new Date())!==today){draw();drawHist()}else drawRisk()},20000);
+setInterval(function(){if(dk(new Date())!==today){draw();drawHist()}else{drawRisk();drawNow();drawPlanList()}},20000);
 if(KY)pull(true);else askKey();
 setInterval(function(){if(KY&&!document.hidden&&!busy)pull(false)},60000);
 document.addEventListener('visibilitychange',function(){if(!document.hidden&&KY)pull(false)});
