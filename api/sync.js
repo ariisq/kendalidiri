@@ -31,6 +31,12 @@ module.exports = async (req, res) => {
   try {
     if (req.method === 'GET') {
       const months = {};
+      if (req.query.legacy) {
+        // data rencana dari Jam 24 versi lama (jika memakai database yang sama)
+        const old = toObj(await redis(['HGETALL', 'jam24']));
+        for (const k in old) months[k] = JSON.parse(old[k]);
+        return res.status(200).json({ months });
+      }
       if (req.query.m) {
         const keys = String(req.query.m).split(',').filter((k) => OK_KEY.test(k)).slice(0, 6);
         if (keys.length) {
